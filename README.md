@@ -21,7 +21,8 @@
     发帖时间间隔异常：连续5次间隔<5秒
     
     内容相似度：基于Word2Vec的余弦相似度
-           ![image](https://github.com/user-attachments/assets/27543397-2288-49ad-a687-3f7f05873b99)
+           ![image](https://github.com/user-attachments/assets/caf46327-0579-485c-a9bd-7bc3f1b5803b)
+
            
     异常活跃时间：凌晨0-2点及晚10-12点发帖占比>40%
 
