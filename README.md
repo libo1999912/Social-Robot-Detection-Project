@@ -21,8 +21,8 @@
     发帖时间间隔异常：连续5次间隔<5秒
     
     内容相似度：基于Word2Vec的余弦相似度
-           ![image](https://github.com/user-attachments/assets/b6c98532-8863-4cc8-afe9-71a0542cfa3f)
-           
+           ![image](https://github.com/user-attachments/assets/83751f3d-6f37-4a5c-9025-9ee1248e14a8)
+
     异常活跃时间：凌晨0-2点及晚10-12点发帖占比>40%
 
   输出：预测结果（预测结果-4个特征近7天数据.csv）
@@ -50,3 +50,28 @@
 ## 实验结果
 ![image](https://github.com/user-attachments/assets/5b3183b1-35a2-44a7-a07b-d6446daeaeca)
 
+
+## 环境依赖
+
+pip install pandas scikit-learn gensim jieba elasticsearch chardet
+
+## 运行步骤
+  1.数据准备
+
+        将训练集与测试集分别命名为 训练集2.csv 和 测试集2.csv
+
+        确保数据包含以下字段：
+                用户账号, 日发帖量, 发帖时间间隔异常, 内容相似度, 凌晨活跃占比
+
+  2.训练与预测
+        python 随机森林模型.py
+  3.LDA主题分析
+        python LDA.py
+  3.结果输出
+
+        预测结果保存至 预测结果-4个特征近7天数据.csv
+        
+        各统计模块生成对应CSV文件（如 时间间隔短的用户.csv）
+
+📜 论文引用
+本项目成果已发表论文《Social Robot Detection on Short Video Platform Based on Random Forest and LDA Model》。
