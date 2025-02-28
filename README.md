@@ -21,8 +21,7 @@
     发帖时间间隔异常：连续5次间隔<5秒
     
     内容相似度：基于Word2Vec的余弦相似度
-           ![image](https://github.com/user-attachments/assets/caf46327-0579-485c-a9bd-7bc3f1b5803b)
-
+           ![image](https://github.com/user-attachments/assets/b6c98532-8863-4cc8-afe9-71a0542cfa3f)
            
     异常活跃时间：凌晨0-2点及晚10-12点发帖占比>40%
 
@@ -46,3 +45,8 @@
 
 4. 数据获取 (es数据查询.py)
 从Elasticsearch集群中爬取快手平台的用户行为数据
+
+
+## 实验结果
+![image](https://github.com/user-attachments/assets/5b3183b1-35a2-44a7-a07b-d6446daeaeca)
+
