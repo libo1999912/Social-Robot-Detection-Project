@@ -1,7 +1,7 @@
 ## 短视频平台社交机器人检测系统
 本项目基于随机森林（Random Forest）和潜在狄利克雷分配（LDA）模型，结合用户行为与文本特征，实现对短视频平台（如快手）中社交机器人的高效检测。通过分析四个关键特征（日发帖量、发帖时间间隔异常、内容相似度、异常活跃时间）及LDA主题相似性，显著提升了检测的召回率与F1分数。
 
-## 项目背景
+## 📌 项目背景
 社交机器人通过自动化程序在短视频平台大量发布虚假信息或无关评论，破坏用户体验。传统方法在短视频场景下面临挑战，因机器人行为模式与微博等平台存在显著差异（如评论内容与视频主题无关）。本项目提出融合随机森林与LDA的检测框架，结合行为特征与文本主题分析，实现更精准的识别。
 ## 论文核心贡献：
     提出四维行为特征（日发帖量、时间间隔、内容相似度、活跃时间）
@@ -10,7 +10,7 @@
     
     实验表明，联合模型使召回率提升5%，F1分数提升4%
 
-## 功能模块
+## 🛠️功能模块
 1. 随机森林模型 (随机森林模型.py)
   输入：训练集（训练集2.csv）与测试集（测试集2.csv）
 
@@ -21,7 +21,7 @@
     发帖时间间隔异常：连续5次间隔<5秒
     
     内容相似度：基于Word2Vec的余弦相似度
-           ![image](https://github.com/user-attachments/assets/83751f3d-6f37-4a5c-9025-9ee1248e14a8)
+    ![image](https://github.com/user-attachments/assets/97fe7967-f4e0-4c00-bf58-f05e39d3e68b)
 
     异常活跃时间：凌晨0-2点及晚10-12点发帖占比>40%
 
@@ -47,10 +47,11 @@
 从Elasticsearch集群中爬取快手平台的用户行为数据
 
 
-## 实验结果
+## 📊实验结果
 ![image](https://github.com/user-attachments/assets/5b3183b1-35a2-44a7-a07b-d6446daeaeca)
 
 
+## 🚀 快速使用
 ## 环境依赖
 
 pip install pandas scikit-learn gensim jieba elasticsearch chardet
@@ -75,3 +76,5 @@ pip install pandas scikit-learn gensim jieba elasticsearch chardet
 
 📜 论文引用
 本项目成果已发表论文《Social Robot Detection on Short Video Platform Based on Random Forest and LDA Model》。
+![image](https://github.com/user-attachments/assets/3e910ea1-8ef1-4f44-9cad-66aa56d98340)
+
